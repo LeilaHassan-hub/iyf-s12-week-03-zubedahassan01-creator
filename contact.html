@@ -1,34 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Zubeda Hassan.">
+  <title>Contact | Zubeda Hassan</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <a class="brand" href="index.html">Zubeda Hassan</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a aria-current="page" href="contact.html">Contact</a>
     </nav>
-    <form action="#" method="POST">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit">Send Message</button>
-</form>
-
+  </header>
+  <main class="page-content">
+    <p class="eyebrow">Say hello</p>
+    <h1>Contact</h1>
+    <p class="lead">This sample form shows the information a contact form needs. It is a front-end example and does not send messages yet.</p>
+    <form class="contact-form" action="#" method="get">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button class="button" type="submit">Prepare message</button>
+    </form>
+  </main>
+  <footer class="site-footer"><p>Learning, practicing, and building step by step.</p></footer>
 </body>
 </html>
