@@ -1,28 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Zubeda - About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zubeda Hassan's learning and project portfolio.">
+  <title>Zubeda Hassan | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <a class="brand" href="index.html">Zubeda Hassan</a>
+    <nav aria-label="Main navigation">
+      <a aria-current="page" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <h1>Zubeda Hassan </h1>
-    <p>im a beginer in  computer programing</p>
-    <img src="photo/photo.jpeg" alt="my photo" width="250" height="300">
-   <ul>
-       <li>reading</li>
-       <li>listenig to music</li>
-       <li>taking new challeng</li>
-   </ul>
-    <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F">Facebook</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Learning by building</p>
+        <h1>Hello, I’m Zubeda.</h1>
+        <p class="lead">I’m a beginner in computer programming, exploring web development one project at a time.</p>
+        <a class="button" href="projects.html">Explore my projects</a>
+      </div>
+      <img class="profile-photo" src="photo/photo.jpeg" alt="Portrait of Zubeda Hassan" width="250" height="300">
+    </section>
+    <section class="section" aria-labelledby="interests-title">
+      <p class="eyebrow">A little about me</p>
+      <h2 id="interests-title">Things I enjoy</h2>
+      <ul class="interest-list">
+        <li>Reading</li>
+        <li>Listening to music</li>
+        <li>Taking on new challenges</li>
+      </ul>
+      <a class="text-link" href="about.html">More about my learning journey →</a>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Learning, practicing, and building step by step.</p></footer>
 </body>
 </html>
