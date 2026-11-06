@@ -22,7 +22,7 @@ The script is present as `new-project.sh`, but it could not be run here because 
 
 ## Task 6 — Git workflow
 
-The following commands were run against the local submission repository. Commit commands used the configured Git identity for Zubeda Hassan; the email value is not repeated in this log.
+The following commands were run against the local submission repository. For readability, commands after the initialization block omit the repeated `git -C` prefix; each used the absolute repository path recorded above. Commit commands also used one-command `user.name` and `user.email` overrides matching the configured account identity; the email value is not repeated in this log.
 
 ### Initialize and inspect
 
@@ -51,6 +51,14 @@ The following commands were run against the local submission repository. Commit 
 - `git merge --no-ff feature/project-setup -m "Merge: project setup script"` — merged the setup branch with a merge commit.
 - `git branch -d feature/project-setup` — deleted the merged feature branch.
 
+### Documentation branch
+
+- `git switch -c docs/submission-guide` — created a documentation branch.
+- `git add README.md terminal-log.md daily-challenges` — staged the project README, command log, and challenge guides.
+- `git commit -m "Docs: describe project and daily challenges"` — committed the documentation.
+- `git switch main` — returned to the main branch.
+- `git merge --no-ff docs/submission-guide -m "Merge: submission documentation"` — merged the documentation branch with a merge commit.
+- `git branch -d docs/submission-guide` — deleted the merged branch.
 A local merge conflict in `about.html` has not yet been created or resolved. The assignment says to resolve that conflict yourself, so it remains for me to complete in my own terminal and record here.
 
 ## Daily challenges
@@ -60,3 +68,4 @@ Not run yet. Record the commands and results after completing each challenge.
 ## Pair Collaboration Lab
 
 Not started. A partner and pair lead have not been assigned yet, so there is no shared repository, PR, review, or merge-conflict PR to record.
+

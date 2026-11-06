@@ -12,3 +12,6 @@ Thumbs.db
 # Temporary output
 *.log
 *.tmp
+
+# Keep the portfolio image directory flat
+photo/*/
