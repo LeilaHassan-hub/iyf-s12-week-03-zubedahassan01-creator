@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary output
+*.log
+*.tmp
